@@ -5,6 +5,20 @@ import { Button } from '@/components/ui/button';
 import { FiCalendar, FiMapPin } from 'react-icons/fi';
 
 export function InvitationButtons() {
+  const handleScrollToEvents = () => {
+    const el = document.querySelector('#events');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleScrollToVenue = () => {
+    const el = document.querySelector('#venue');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 w-full max-w-xs sm:max-w-md mx-auto invite-card-item">
       <Button
@@ -12,6 +26,7 @@ export function InvitationButtons() {
         size="md"
         glow
         fullWidth
+        onClick={handleScrollToEvents}
         className="sm:w-auto font-sans tracking-[0.2em]"
       >
         <FiCalendar className="w-4 h-4 text-[#D4AF37]" />
@@ -22,6 +37,7 @@ export function InvitationButtons() {
         variant="outline"
         size="md"
         fullWidth
+        onClick={handleScrollToVenue}
         className="sm:w-auto font-sans tracking-[0.2em]"
       >
         <FiMapPin className="w-4 h-4 text-[#4A0E17]" />
@@ -30,3 +46,4 @@ export function InvitationButtons() {
     </div>
   );
 }
+

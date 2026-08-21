@@ -5,6 +5,7 @@ import { PageWrapper } from '@/components/layout/page-wrapper';
 import { FloatingDecorations } from '@/components/ui/floating-decorations';
 import { Hero } from '@/components/sections/hero/hero';
 import { InvitationSection } from '@/components/sections/invitation/invitation-section';
+import { VideoSection } from '@/components/sections/video/video-section';
 import { EventsSection } from '@/components/sections/events/events-section';
 import { VenueSection } from '@/components/sections/venue/venue-section';
 import { GallerySection } from '@/components/sections/gallery/gallery-section';
@@ -16,6 +17,7 @@ export default function HomePage() {
       <FloatingDecorations />
       <Hero />
       <InvitationSection />
+      <VideoSection />
       <EventsSection />
       <VenueSection />
       <GallerySection />

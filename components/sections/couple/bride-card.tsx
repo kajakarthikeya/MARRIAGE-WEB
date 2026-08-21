@@ -15,11 +15,11 @@ export function BrideCard() {
       <FloralCorner position="top-right" className="top-2 right-2 text-[#D4AF37]/50" />
 
       {/* Bride Image Frame */}
-      <CoupleImage alt="Bride" initials="A.V." className="mb-6" />
+      <CoupleImage alt="Bride" initials="N.K." src="/images/bride.jpg" className="mb-6" />
 
       {/* Name & Title */}
       <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#4A0E17] mb-1 gold-shimmer">
-        Aurelia Vance
+        Naga Anusha Kaja
       </h3>
       <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold mb-3">
         The Bride
@@ -27,17 +27,17 @@ export function BrideCard() {
 
       {/* Parents */}
       <p className="font-sans text-xs text-[#6E5D4F] uppercase tracking-wider mb-4 border-y border-[#D4AF37]/20 py-2 w-full max-w-xs">
-        Daughter of Mr. &amp; Mrs. Vance
+        Daughter of Kaja Family
       </p>
 
       {/* Bio Prose */}
       <p className="font-sans text-xs sm:text-sm text-[#766E65] leading-relaxed max-w-sm mb-6">
-        A passionate designer with a love for classical literature and quiet morning tea. Aurelia brings warmth, elegance, and boundless joy to everyone around her.
+        Graceful, radiant, and gentle. Naga Anusha brings warmth, elegance, and boundless joy to everyone around her.
       </p>
 
-      {/* Decorative Signature Placeholder */}
+      {/* Signature */}
       <div className="font-serif italic text-lg text-[#4A0E17]/80 tracking-widest border-t border-[#D4AF37]/20 pt-3 w-full max-w-xs">
-        ~ Aurelia Vance ~
+        ~ Naga Anusha ~
       </div>
     </Card>
   );

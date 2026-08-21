@@ -4,9 +4,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { SITE_CONFIG } from '@/constants/site';
 import { DecorativeDivider } from '@/components/ui/decorative-divider';
-import { FiHeart, FiShare2, FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi';
+import { FiHeart } from 'react-icons/fi';
 
 export function Footer() {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="w-full bg-[#FAF7F2] border-t border-[#D4AF37]/30 py-16 px-6 text-center relative overflow-hidden select-none">
       {/* Golden Ambient Radial Glow */}
@@ -17,7 +21,9 @@ export function Footer() {
         <motion.div
           whileHover={{ scale: 1.08, rotate: 3 }}
           transition={{ duration: 0.3 }}
+          onClick={handleScrollToTop}
           className="w-16 h-16 rounded-full border-2 border-[#D4AF37]/60 flex items-center justify-center mb-6 bg-white/70 shadow-[0_10px_25px_rgba(212,175,55,0.2)] cursor-pointer"
+          title="Back to top"
         >
           <div className="w-12 h-12 rounded-full border border-[#D4AF37]/40 flex items-center justify-center">
             <span className="font-serif text-lg font-bold text-[#4A0E17] tracking-widest">
@@ -40,38 +46,6 @@ export function Footer() {
         </p>
 
         <DecorativeDivider variant="ornate" className="my-4 max-w-xs" />
-
-        {/* Social Sharing Placeholders */}
-        <div className="flex items-center gap-4 my-4">
-          <a
-            href="#"
-            className="w-9 h-9 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#4A0E17] hover:bg-[#4A0E17] hover:text-[#FAF7F2] hover:border-[#4A0E17] transition-all duration-300 shadow-xs"
-            aria-label="Instagram Share"
-          >
-            <FiInstagram className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            className="w-9 h-9 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#4A0E17] hover:bg-[#4A0E17] hover:text-[#FAF7F2] hover:border-[#4A0E17] transition-all duration-300 shadow-xs"
-            aria-label="Facebook Share"
-          >
-            <FiFacebook className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            className="w-9 h-9 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#4A0E17] hover:bg-[#4A0E17] hover:text-[#FAF7F2] hover:border-[#4A0E17] transition-all duration-300 shadow-xs"
-            aria-label="Twitter Share"
-          >
-            <FiTwitter className="w-4 h-4" />
-          </a>
-          <a
-            href="#"
-            className="w-9 h-9 rounded-full border border-[#D4AF37]/40 flex items-center justify-center text-[#4A0E17] hover:bg-[#4A0E17] hover:text-[#FAF7F2] hover:border-[#4A0E17] transition-all duration-300 shadow-xs"
-            aria-label="Share Invitation"
-          >
-            <FiShare2 className="w-4 h-4" />
-          </a>
-        </div>
 
         {/* Designed With Love & Copyright */}
         <div className="font-sans text-[11px] tracking-wider text-[#766E65] space-y-1 mt-4">

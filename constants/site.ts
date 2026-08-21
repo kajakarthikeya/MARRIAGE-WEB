@@ -13,6 +13,7 @@ export const SITE_CONFIG = {
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '#' },
   { label: 'Invitation', href: '#invitation' },
+  { label: 'Trailer', href: '#video' },
   { label: 'Events', href: '#events' },
   { label: 'Venue', href: '#venue' },
   { label: 'Gallery', href: '#gallery' },

@@ -77,12 +77,12 @@ export function GalleryLightbox({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-8 select-none"
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-8 select-none"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
           {/* Top Control Bar */}
-          <div className="flex items-center justify-between z-10 text-[#FAF7F2]">
+          <div className="flex items-center justify-between z-10 text-[#FAF7F2] max-w-6xl w-full mx-auto">
             <div className="flex items-center gap-3">
               <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold">
                 Photo {selectedIndex + 1} of {items.length}
@@ -91,7 +91,7 @@ export function GalleryLightbox({
 
             <button
               onClick={onClose}
-              className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+              className="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] cursor-pointer"
               aria-label="Close Lightbox"
             >
               <FiX className="w-6 h-6" />
@@ -99,11 +99,11 @@ export function GalleryLightbox({
           </div>
 
           {/* Main Content Area */}
-          <div className="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
+          <div className="relative flex-1 flex items-center justify-center my-2 max-w-6xl w-full mx-auto overflow-hidden">
             {/* Prev Button */}
             <button
               onClick={onPrev}
-              className="absolute left-2 sm:left-6 z-20 p-3 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+              className="absolute left-2 sm:left-4 z-20 p-3 rounded-full bg-black/50 hover:bg-black/80 text-[#FAF7F2] hover:text-[#D4AF37] border border-[#D4AF37]/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] cursor-pointer"
               aria-label="Previous Image"
             >
               <FiChevronLeft className="w-6 h-6" />
@@ -112,25 +112,31 @@ export function GalleryLightbox({
             {/* Displayed Image Frame */}
             <motion.div
               key={currentItem.id}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
+              exit={{ opacity: 0, scale: 0.96 }}
               transition={{ duration: 0.3 }}
-              className="max-w-4xl w-full h-[65vh] sm:h-[70vh] rounded-2xl border-2 border-[#D4AF37]/50 bg-[#FAF7F2] p-8 flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden"
+              className="max-w-4xl w-full max-h-[75vh] flex flex-col items-center justify-center relative overflow-hidden rounded-2xl border border-[#D4AF37]/50 bg-stone-950 p-2 shadow-2xl"
             >
-              <div className="w-24 h-24 rounded-full border border-[#D4AF37]/50 flex items-center justify-center bg-white/70 text-[#4A0E17] shadow-sm">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <rect x="3" y="3" width="18" height="18" rx="3" />
-                  <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
-                  <path d="M21 15L16 10L5 21" strokeLinecap="round" />
-                </svg>
+              <img
+                src={currentItem.src}
+                alt={currentItem.title}
+                className="max-h-[65vh] w-auto max-w-full object-contain rounded-xl"
+              />
+              <div className="mt-3 text-center px-4">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-white tracking-wide">
+                  {currentItem.title}
+                </h3>
+                <p className="font-sans text-xs sm:text-sm text-[#D4AF37] mt-1 max-w-md mx-auto">
+                  {currentItem.caption}
+                </p>
               </div>
             </motion.div>
 
             {/* Next Button */}
             <button
               onClick={onNext}
-              className="absolute right-2 sm:right-6 z-20 p-3 rounded-full bg-white/10 hover:bg-white/20 text-[#FAF7F2] hover:text-[#D4AF37] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+              className="absolute right-2 sm:right-4 z-20 p-3 rounded-full bg-black/50 hover:bg-black/80 text-[#FAF7F2] hover:text-[#D4AF37] border border-[#D4AF37]/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] cursor-pointer"
               aria-label="Next Image"
             >
               <FiChevronRight className="w-6 h-6" />
@@ -139,7 +145,7 @@ export function GalleryLightbox({
 
           {/* Bottom Bar Hint */}
           <div className="text-center z-10">
-            <p className="font-sans text-xs uppercase tracking-[0.2em] text-[#D4AF37]">
+            <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-[#D4AF37]">
               Press Left / Right Arrows to Navigate • Esc to Exit
             </p>
           </div>

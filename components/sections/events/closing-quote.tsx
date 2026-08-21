@@ -6,6 +6,13 @@ import { Button } from '@/components/ui/button';
 import { FiMapPin } from 'react-icons/fi';
 
 export function ClosingQuote() {
+  const handleScrollToVenue = () => {
+    const el = document.querySelector('#venue');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="w-full max-w-2xl mx-auto my-16 text-center events-quote-item">
       <DecorativeDivider variant="ornate" className="my-4 max-w-sm" />
@@ -19,7 +26,13 @@ export function ClosingQuote() {
       <DecorativeDivider variant="simple" className="my-4 max-w-sm" />
 
       <div className="mt-8 flex justify-center">
-        <Button variant="primary" size="lg" glow className="font-sans tracking-[0.2em]">
+        <Button
+          variant="primary"
+          size="lg"
+          glow
+          onClick={handleScrollToVenue}
+          className="font-sans tracking-[0.2em]"
+        >
           <FiMapPin className="w-4 h-4 text-[#D4AF37]" />
           View Venue
         </Button>
