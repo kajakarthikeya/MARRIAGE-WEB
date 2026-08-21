@@ -18,7 +18,7 @@ export function VideoModal({
   onClose,
   videoSrc = '/api/video',
   youtubeId,
-  title = 'Vineeth & Naga Anusha — Wedding Trailer',
+  title = 'Vineeth Babu & Naga Anusha — Wedding Trailer',
 }: VideoModalProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);

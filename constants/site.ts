@@ -1,7 +1,7 @@
 import { NavItem } from '@/types';
 
 export const SITE_CONFIG = {
-  name: 'Vineeth & Naga Anusha',
+  name: 'Vineeth Babu & Naga Anusha',
   tagline: 'Wedding Celebration',
   description: 'Together with their families, Vineeth Babu Akkinapalli & Naga Anusha Kaja invite you to celebrate their wedding day.',
   url: 'https://wedding-invitation.example.com',

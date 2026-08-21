@@ -27,7 +27,7 @@ export function VideoHeader() {
 
       {/* Subtitle - Simple Solid Visible Text */}
       <p className="text-[#6E5D4F] text-sm sm:text-base md:text-lg leading-relaxed font-sans max-w-2xl mx-auto font-medium">
-        Watch the special moments and cinematic glimpse of Vineeth & Naga Anusha&apos;s upcoming wedding celebration.
+        Watch the special moments and cinematic glimpse of Vineeth Babu &amp; Naga Anusha&apos;s upcoming wedding celebration.
       </p>
     </div>
   );

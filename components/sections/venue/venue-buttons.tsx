@@ -22,7 +22,7 @@ export function VenueButtons() {
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//Vineeth & Naga Anusha Wedding//EN',
+      'PRODID:-//Vineeth Babu & Naga Anusha Wedding//EN',
       'BEGIN:VEVENT',
       'SUMMARY:Vineeth Babu & Naga Anusha Wedding Celebration',
       'DESCRIPTION:Join us for the grand wedding celebration of Vineeth Babu Akkinapalli and Naga Anusha Kaja at Sri Siri Convention, Vijayawada.',

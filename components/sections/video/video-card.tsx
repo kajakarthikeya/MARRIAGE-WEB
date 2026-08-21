@@ -11,7 +11,7 @@ interface VideoCardProps {
 }
 
 export function VideoCard({
-  title = 'Vineeth & Naga Anusha — Wedding Trailer',
+  title = 'Vineeth Babu & Naga Anusha — Wedding Trailer',
   posterUrl,
   videoSrc = '/api/video',
   youtubeId,

@@ -20,7 +20,7 @@ export function VideoSection({
   videoSrc = '/api/video',
   youtubeId,
   posterUrl = '/images/couple-1.jpg',
-  title = 'Vineeth & Naga Anusha — Wedding Trailer',
+  title = 'Vineeth Babu & Naga Anusha — Wedding Trailer',
   subtitle = 'Click to experience the cinematic trailer',
 }: VideoSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
