@@ -58,7 +58,7 @@ export function VideoCard({
             onClick={handleStartPlay}
             className="group relative aspect-video w-full cursor-pointer flex flex-col justify-between p-6 sm:p-8"
           >
-            {/* Poster Image / Luxury Gradient Background */}
+            {/* Poster Image / Elegant Gradient Background */}
             {posterUrl ? (
               <img
                 src={posterUrl}

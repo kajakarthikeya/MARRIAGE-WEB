@@ -53,7 +53,7 @@ export function HeroContent() {
         Akkinapalli &amp; Kaja
       </p>
 
-      {/* Luxury Divider */}
+      {/* Ornate Divider */}
       <HeroDivider />
 
       {/* Wedding Date */}

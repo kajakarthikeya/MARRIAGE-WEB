@@ -30,7 +30,7 @@ export function VenueImage() {
 
         {/* Glassmorphism Badge */}
         <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-white/70 backdrop-blur-md border border-[#D4AF37]/40 text-[11px] font-sans uppercase tracking-widest text-[#4A0E17]">
-          Luxury Event Venue
+          Event Venue
         </div>
       </motion.div>
     </div>

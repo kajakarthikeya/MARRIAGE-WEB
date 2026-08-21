@@ -4,11 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SITE_CONFIG } from '@/constants/site';
 
-interface LuxuryLoaderProps {
+interface WeddingLoaderProps {
   onComplete?: () => void;
 }
 
-export function LuxuryLoader({ onComplete }: LuxuryLoaderProps) {
+export function WeddingLoader({ onComplete }: WeddingLoaderProps) {
   const [progress, setProgress] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
@@ -35,7 +35,7 @@ export function LuxuryLoader({ onComplete }: LuxuryLoaderProps) {
     <AnimatePresence>
       {!isFinished && (
         <motion.div
-          key="luxury-loader"
+          key="wedding-loader"
           initial={{ opacity: 1 }}
           exit={{ 
             opacity: 0, 
@@ -88,7 +88,7 @@ export function LuxuryLoader({ onComplete }: LuxuryLoaderProps) {
               {SITE_CONFIG.tagline}
             </motion.p>
 
-            {/* Luxury Progress Bar */}
+            {/* Progress Bar */}
             <div className="w-48 h-[2px] bg-[#EAE0D5] rounded-full overflow-hidden relative mb-3">
               <motion.div
                 className="h-full bg-gradient-to-r from-[#D4AF37] via-[#C5A059] to-[#4A0E17]"

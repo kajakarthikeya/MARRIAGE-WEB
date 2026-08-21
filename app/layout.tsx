@@ -27,11 +27,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
-  title: `${SITE_CONFIG.name} — Luxury Wedding Invitation`,
+  title: `${SITE_CONFIG.name} — Wedding Invitation`,
   description: SITE_CONFIG.description,
-  keywords: ['Luxury Wedding', 'Wedding Invitation', 'Vineeth Babu Akkinapalli and Naga Anusha Kaja', 'Digital Wedding'],
+  keywords: ['Wedding', 'Wedding Invitation', 'Vineeth Babu Akkinapalli and Naga Anusha Kaja', 'Digital Wedding'],
   openGraph: {
-    title: `${SITE_CONFIG.name} — Luxury Wedding Invitation`,
+    title: `${SITE_CONFIG.name} — Wedding Invitation`,
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.name} — Luxury Wedding Invitation`,
+    title: `${SITE_CONFIG.name} — Wedding Invitation`,
     description: SITE_CONFIG.description,
     images: [SITE_CONFIG.ogImage],
   },

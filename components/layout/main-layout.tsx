@@ -5,7 +5,7 @@ import { LenisProvider } from '@/components/providers/lenis-provider';
 import { CustomCursor } from '@/components/ui/custom-cursor';
 import { ScrollProgress } from '@/components/ui/scroll-progress';
 import { ScrollIndicator } from '@/components/ui/scroll-indicator';
-import { LuxuryLoader } from '@/components/ui/luxury-loader';
+import { WeddingLoader } from '@/components/ui/wedding-loader';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { handleSkipToContent } from '@/utils/accessibility';
@@ -34,8 +34,8 @@ export function MainLayout({ children }: MainLayoutProps) {
       <CustomCursor />
       <ScrollIndicator />
 
-      {/* Entrance Luxury Loader */}
-      <LuxuryLoader />
+      {/* Entrance Loader */}
+      <WeddingLoader />
 
       {/* Main App Layout */}
       <div className="flex flex-col min-h-screen bg-[#FBF9F5] text-[#3D2E24] selection:bg-[#4A0E17] selection:text-[#FAF7F2]">

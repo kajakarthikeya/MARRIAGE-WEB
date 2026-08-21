@@ -1,22 +1,22 @@
-# Luxury Wedding Invitation Website — Vineeth Babu Akkinapalli & Naga Anusha Kaja
+# Digital Wedding Invitation Website — Vineeth Babu Akkinapalli & Naga Anusha Kaja
 
-An agency-grade, luxury digital wedding invitation website built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, **GSAP**, **Framer Motion**, and **Lenis Smooth Scroll**.
+An agency-grade digital wedding invitation website built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS v4**, **GSAP**, **Framer Motion**, and **Lenis Smooth Scroll**.
 
 ---
 
 ## 🌟 Features & Highlights
 
-- **Cinematic Entrance Loader**: 2–3 second luxury loading screen featuring couple initials (`A & S`), gold shimmer text effect, and smooth blur/scale exit animation.
-- **Global Smooth Scroll & Cursor**: Buttery-smooth scrolling using Lenis integrated with GSAP ScrollTrigger ticker + desktop custom magnetic ring cursor.
+- **Cinematic Entrance Loader**: 2–3 second loading screen featuring couple initials (`V & N`), gold shimmer text effect, and smooth exit animation.
+- **Global Smooth Scroll & Cursor**: Buttery-smooth scrolling using Lenis integrated with GSAP ScrollTrigger ticker.
 - **Transparent Glass Navbar**: Smooth transition from transparent to glassmorphism backdrop with responsive mobile navigation overlay.
-- **Cinematic Hero Section**: Animated background with radial lights, slow ambient zoom, drifting flower petals, floating gold sparkles, and desktop mouse parallax.
-- **Luxury Invitation Experience**: Paper-textured invitation card, couple details, emotional invitation prose, and a 4-event itinerary summary.
-- **Meet the Couple Showcase**: Dual luxury cards for the Bride (*Aurelia Vance*) and Groom (*Sebastian Hayes*) with photo frames, parents' details, and central animated pulsing heart motif.
+- **Cinematic Hero Section**: Animated background with radial lights, drifting flower petals, and floating gold sparkles.
+- **Invitation Experience**: Paper-textured invitation card, couple details, emotional invitation prose, and a 4-event itinerary summary.
+- **Meet the Couple Showcase**: Dual cards for the Bride (*Naga Anusha Kaja*) and Groom (*Vineeth Babu Akkinapalli*) with photo frames and parents' details.
 - **Wedding Events Journey**: Scroll-driven vertical timeline line and glowing nodes showcasing *Engagement*, *Haldi Ceremony*, *Mehendi Ceremony*, and *Wedding Ceremony*.
-- **Luxury Venue Experience**: Showcase image frame, address specifications, embedded responsive Google Map, interactive action buttons (*Get Directions*, *Open Maps*, *Copy Address*, *Save Venue*), travel logistics, and convenience cards.
-- **Luxury Wedding Memories Gallery**: Responsive 4-column masonry photo grid + interactive fullscreen Lightbox modal with keyboard shortcuts (`ArrowLeft`, `ArrowRight`, `Escape`), touch swipe support, and body scroll locking.
-- **Luxury RSVP Experience**: Validated form with guest counter (1–10), custom attendance radio buttons, modular EmailJS service integration (with mock fallback), and animated success state.
-- **Thank You Section & Premium Footer**: Heartfelt gratitude message, monogram badge, date, venue, social sharing placeholders, and copyright notice.
+- **Venue Experience**: Showcase image frame, address specifications, embedded responsive Google Map, interactive action buttons (*Get Directions*, *Open Maps*, *Copy Address*, *Save Venue*), travel logistics, and convenience cards.
+- **Wedding Memories Gallery**: Responsive photo grid + interactive fullscreen Lightbox modal with keyboard shortcuts (`ArrowLeft`, `ArrowRight`, `Escape`), touch swipe support, and body scroll locking.
+- **RSVP Experience**: Validated form with guest counter (1–10), custom attendance radio buttons, modular EmailJS service integration (with mock fallback), and animated success state.
+- **Thank You Section & Premium Footer**: Heartfelt gratitude message, monogram badge, date, venue, and copyright notice.
 
 ---
 
@@ -43,8 +43,8 @@ An agency-grade, luxury digital wedding invitation website built with **Next.js 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/luxury-wedding-invitation.git
-   cd luxury-wedding-invitation
+   git clone https://github.com/kajakarthikeya/MARRIAGE-WEB.git
+   cd MARRIAGE-WEB
    ```
 
 2. **Install dependencies**:

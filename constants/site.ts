@@ -2,9 +2,9 @@ import { NavItem } from '@/types';
 
 export const SITE_CONFIG = {
   name: 'Vineeth & Naga Anusha',
-  tagline: 'Luxury Wedding Celebration',
+  tagline: 'Wedding Celebration',
   description: 'Together with their families, Vineeth Babu Akkinapalli & Naga Anusha Kaja invite you to celebrate their wedding day.',
-  url: 'https://luxury-wedding-invitation.example.com',
+  url: 'https://wedding-invitation.example.com',
   ogImage: '/images/og-image.jpg',
   coupleInitials: 'V & N',
   weddingYear: '2026',
@@ -20,8 +20,8 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const FOUNDATION_STATUS = [
-  'Luxury Loading Completed',
-  'Premium Navigation Ready',
+  'Loading Completed',
+  'Navigation Ready',
   'Animation System Ready',
   'Design System Ready',
   'Smooth Scroll Ready',

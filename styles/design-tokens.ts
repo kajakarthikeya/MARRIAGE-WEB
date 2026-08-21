@@ -37,7 +37,7 @@ export const DESIGN_TOKENS = {
     },
   },
   shadows: {
-    luxury: '0 20px 40px -15px rgba(74, 14, 23, 0.08)',
+    softElevation: '0 20px 40px -15px rgba(74, 14, 23, 0.08)',
     goldGlow: '0 0 25px rgba(212, 175, 55, 0.3)',
     softCard: '0 10px 30px rgba(61, 46, 36, 0.05)',
     elevated: '0 25px 50px -12px rgba(61, 46, 36, 0.12)',
