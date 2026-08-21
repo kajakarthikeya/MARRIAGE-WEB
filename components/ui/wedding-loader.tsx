@@ -61,10 +61,10 @@ export function WeddingLoader({ onComplete }: WeddingLoaderProps) {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="w-24 h-24 rounded-full border-2 border-[#D4AF37]/40 flex items-center justify-center p-3 mb-6 bg-white/40 backdrop-blur-sm shadow-[0_10px_30px_rgba(212,175,55,0.2)]"
+              className="w-24 h-24 rounded-full border-2 border-[#D4AF37]/40 flex items-center justify-center p-3 mb-6 bg-white/40 backdrop-blur-sm shadow-[0_10px_30px_rgba(212,175,55,0.2)] shrink-0"
             >
-              <div className="w-full h-full rounded-full border border-[#D4AF37]/30 flex items-center justify-center">
-                <span className="font-serif text-2xl font-bold tracking-widest text-[#4A0E17] gold-shimmer">
+              <div className="w-full h-full rounded-full border border-[#D4AF37]/30 flex items-center justify-center overflow-hidden">
+                <span className="font-serif text-xl font-bold tracking-widest text-[#4A0E17] gold-shimmer whitespace-nowrap leading-none text-center">
                   {SITE_CONFIG.coupleInitials}
                 </span>
               </div>

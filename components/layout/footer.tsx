@@ -22,11 +22,11 @@ export function Footer() {
           whileHover={{ scale: 1.08, rotate: 3 }}
           transition={{ duration: 0.3 }}
           onClick={handleScrollToTop}
-          className="w-16 h-16 rounded-full border-2 border-[#D4AF37]/60 flex items-center justify-center mb-6 bg-white/70 shadow-[0_10px_25px_rgba(212,175,55,0.2)] cursor-pointer"
+          className="w-16 h-16 rounded-full border-2 border-[#D4AF37]/60 flex items-center justify-center mb-6 bg-white/70 shadow-[0_10px_25px_rgba(212,175,55,0.2)] cursor-pointer shrink-0"
           title="Back to top"
         >
-          <div className="w-12 h-12 rounded-full border border-[#D4AF37]/40 flex items-center justify-center">
-            <span className="font-serif text-lg font-bold text-[#4A0E17] tracking-widest">
+          <div className="w-12 h-12 rounded-full border border-[#D4AF37]/40 flex items-center justify-center overflow-hidden">
+            <span className="font-serif text-sm font-bold text-[#4A0E17] tracking-wider whitespace-nowrap leading-none text-center">
               {SITE_CONFIG.coupleInitials}
             </span>
           </div>

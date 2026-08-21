@@ -6,7 +6,7 @@ An agency-grade digital wedding invitation website built with **Next.js 15 (App 
 
 ## 🌟 Features & Highlights
 
-- **Cinematic Entrance Loader**: 2–3 second loading screen featuring couple initials (`V & N`), gold shimmer text effect, and smooth exit animation.
+- **Cinematic Entrance Loader**: 2–3 second loading screen featuring couple initials (`V & A`), gold shimmer text effect, and smooth exit animation.
 - **Global Smooth Scroll & Cursor**: Buttery-smooth scrolling using Lenis integrated with GSAP ScrollTrigger ticker.
 - **Transparent Glass Navbar**: Smooth transition from transparent to glassmorphism backdrop with responsive mobile navigation overlay.
 - **Cinematic Hero Section**: Animated background with radial lights, drifting flower petals, and floating gold sparkles.

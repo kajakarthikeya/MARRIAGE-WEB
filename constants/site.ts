@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   description: 'Together with their families, Vineeth Babu Akkinapalli & Naga Anusha Kaja invite you to celebrate their wedding day.',
   url: 'https://wedding-invitation.example.com',
   ogImage: '/images/og-image.jpg',
-  coupleInitials: 'V & N',
+  coupleInitials: 'V & A',
   weddingYear: '2026',
 } as const;
 

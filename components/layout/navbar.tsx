@@ -76,8 +76,8 @@ export function Navbar() {
             onClick={(e) => handleNavClick(e, '#')}
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg"
           >
-            <div className="w-10 h-10 rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#FAF7F2]/60 backdrop-blur-sm group-hover:border-[#4A0E17] transition-colors duration-300 shadow-xs">
-              <span className="font-serif text-sm font-bold text-[#4A0E17] tracking-wider">
+            <div className="w-10 h-10 rounded-full border border-[#D4AF37]/60 flex items-center justify-center bg-[#FAF7F2]/60 backdrop-blur-sm group-hover:border-[#4A0E17] transition-colors duration-300 shadow-xs shrink-0 overflow-hidden">
+              <span className="font-serif text-xs font-bold text-[#4A0E17] tracking-wider whitespace-nowrap leading-none text-center">
                 {SITE_CONFIG.coupleInitials}
               </span>
             </div>
